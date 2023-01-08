@@ -1,0 +1,31 @@
+.download {
+  width: 250px;
+  height: 285px;
+  background: url('../../../../../../assets/sprite/download.png') no-repeat 0 0;
+  position: relative;
+  box-sizing: border-box;
+
+  .downloadBtn {
+    display: block;
+    position: absolute;
+    width: 215px;
+    height: 56px;
+    left: 19px;
+    top: 185px;
+
+    &:hover {
+      background: url('../../../../../../assets/sprite/download.png') 0 -289px;
+    }
+  }
+
+  .txt {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin: 10px 0;
+    color: #8d8d8d;
+    top: 241px;
+  }
+}

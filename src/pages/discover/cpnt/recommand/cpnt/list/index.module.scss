@@ -1,0 +1,164 @@
+// 热门推荐
+.hotTitle {
+  height: 35px;
+  width: 100%;
+  border-bottom: 2px #C10D0C solid;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  .circle {
+    width: 34px;
+    height: 33px;
+    background: url('../../../../../../assets/sprite/index.png') no-repeat -225px -154px;
+  }
+
+  .title {
+    font-size: 20px;
+    color: #333333;
+    margin-right: 20px;
+  }
+
+  a {
+    font-size: 12px;
+    color: #666666;
+    line-height: 33px;
+  }
+
+}
+
+// 内容
+.box{
+  width: 100%;
+  height: 475px;
+  border: 1px solid #ccc;
+  display: flex;
+  background-color: #f4f4f4;
+
+  .item{
+    width: 33.3%;
+    height: 472px;
+    // padding: 20px 0 0 20px;
+
+    &:first-child,&:nth-child(2){
+      border-right: 1px solid #ccc;
+    }
+
+    .top{
+      display: flex;
+      height: 100px;
+      margin: 20px 0 0 20px;
+
+      .pic {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+        box-shadow: 0 5px 5px rgba($color: #000000, $alpha: 0.5);
+      }
+    
+      a{
+        color: #333333;
+
+        p {
+          margin: 0;
+          margin-top: 6px;
+          margin-bottom: 10px;
+        }
+      }
+
+      
+      
+      :global{
+        .arco-icon-play-circle {
+          font-size: 22px;
+          color: #999;
+          margin-right: 8px;
+
+          &:hover{
+            color: #666666;
+          }
+        }
+      
+        .arco-icon-folder-add {
+          font-size: 22px;
+          color: #999;
+
+          &:hover {
+            color: #666666;
+          }
+        }
+      }
+    }
+
+    .listul{
+      height: 352px;
+      width: 100%;
+      margin: 0;
+
+      .listli{
+        height: 32px;
+        width: 100%;
+        margin: 0;
+        line-height: 32px;
+        display: flex;
+
+        a{
+          font-size: 12px;
+        }
+
+        &:nth-child(2n+1){
+          background-color: #e8e8e8;
+        }
+
+        &:last-child{
+          text-indent: 140px;
+
+
+          .last{
+            color: #000;
+
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .left{
+          width: 15%;
+          height: 32px;
+          text-align: right;
+          font-size: 16px;
+        }
+
+        .right{
+          width: 85%;
+          height: 32px;
+          text-indent: 1em;
+          font-size: 12px;
+          /* 第一步：让文字强制一行显示 */
+          white-space: nowrap;
+          /* 第二步：溢出隐藏 */
+          overflow: hidden;
+          /* 第三步：溢出的内容省略号显示 */
+          text-overflow: ellipsis;
+
+          &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+          }
+
+          .ico{
+            width: 90px;
+            height: 32px;
+            background-color: pink;
+          }
+        }
+
+        &:nth-child(-n+3) .left {
+          color: #C10D0C;
+        }
+      }
+    }
+  }
+}

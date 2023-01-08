@@ -1,0 +1,30 @@
+.playicon {
+  margin-right: 20px;
+
+  :global {
+
+    .anticon-backward,
+    .anticon-forward {
+      margin: 10px 8px 10px 0;
+      font-size: 30px;
+      color: #999;
+
+      &:hover {
+        color: #ccc;
+        cursor: pointer;
+      }
+    }
+
+    .anticon-play-circle,
+    .anticon-pause-circle {
+      font-size: 36px;
+      margin: 7px 8px 7px 0;
+      color: #ccc;
+
+      &:hover {
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

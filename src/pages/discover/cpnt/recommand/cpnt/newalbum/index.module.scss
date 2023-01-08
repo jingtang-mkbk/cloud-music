@@ -1,0 +1,93 @@
+// 热门推荐
+.hotTitle {
+  height: 35px;
+  width: 100%;
+  border-bottom: 2px #C10D0C solid;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  .circle {
+    width: 34px;
+    height: 33px;
+    background: url('../../../../../../assets/sprite/index.png') no-repeat -225px -154px;
+  }
+
+  .title {
+    font-size: 20px;
+    color: #333333;
+    margin-right: 20px;
+  }
+
+  .linknew {
+    font-size: 12px;
+    color: #666666;
+    line-height: 33px;
+    display: block;
+    margin-right: 10px;
+  }
+
+}
+
+.newDisc{
+  width: 100%;
+  height: 185px;
+  padding: 28px 16px 0 16px;
+  display: flex !important;
+  justify-content: space-evenly;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  position: relative;
+
+
+  .pic{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    box-shadow: 0 5px 5px rgba($color: #000000, $alpha: 0.6);
+
+    .pic2{
+      display: block;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .disc{
+      width: 117px;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('../../../../../../assets/sprite/coverall.png') no-repeat 0 -568px;
+    }
+
+    .txt1{
+      position: absolute;
+      display: block;
+      width: 100px;
+      height: 20px;
+      top: 100px;
+      left: 0;
+      color: #000;
+      /* 允许单词内换行 */
+      word-break: break-all;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      /* 开启盒子的弹性布局 */
+      display: -webkit-box;
+      /* 控制第几行出现省略号 */
+      -webkit-line-clamp: 2;
+      /* 设置子元素从上向下垂直排列 */
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+:global{
+  .arco-carousel-arrow>div>svg{
+    color: #000000 !important;
+    font-size: 16px !important;
+  }
+}

@@ -1,0 +1,50 @@
+.list{
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.page {
+  text-align: center;
+
+  :global {
+
+    .ant-pagination-item:hover a {
+      color: black;
+    }
+
+    .ant-pagination-item-active a {
+      color: white;
+      background-color: #c20c0c;
+    }
+
+    .ant-pagination-item-active a:hover {
+      color: white;
+    }
+
+    .ant-pagination-item-active {
+      border: #c20c0c 1px solid;
+    }
+
+    .ant-pagination-item:hover {
+      border: #c20c0c 1px solid;
+    }
+
+    .ant-pagination-next:hover button,
+    .ant-pagination-prev:hover button {
+      border-color: none;
+    }
+
+    .ant-pagination-next:focus-visible .ant-pagination-item-link,
+    .ant-pagination-next:hover .ant-pagination-item-link,
+    .ant-pagination-prev:focus-visible .ant-pagination-item-link,
+    .ant-pagination-prev:hover .ant-pagination-item-link {
+      color: black;
+      border-color: #d9d9d9;
+    }
+
+    .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-link-icon,
+    .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-link-icon {
+      color: black;
+    }
+  }
+}

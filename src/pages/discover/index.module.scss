@@ -1,0 +1,74 @@
+.top {
+  width: 100vw;
+  height: 35px;
+  background-color: #c20c0c;
+  width: 100%;
+
+  .w {
+    width: 1100px;
+    height: 35px;
+    margin: 0 auto;
+    padding-left: 180px;
+    display: flex;
+
+    // .box {
+    //   // float: left;
+    //   margin: 0 17px;
+    //   // width: 100px;
+    //   // height: 35px;
+
+    //   a {
+    //     display: block;
+    //     padding: 0 13px;
+    //     height: 21px;
+    //     border-radius: 10px;
+    //     text-align: center;
+    //     color: #fff;
+    //     margin-top: 7px;
+
+    //     &:hover {
+    //       background-color: #9b0909;
+    //     }
+    //   }
+
+    //   .active {
+    //     background-color: #9b0909;
+    //   }
+    // }
+
+    :global{
+      li.ant-menu-overflow-item.ant-menu-item.ant-menu-item-only-child {
+        background-color: #c20c0c;
+        line-height: 35px;
+        color: white;
+      }
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-active,
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-open,
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-selected,
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item:hover,
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-active,
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-open,
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-selected,
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu:hover{
+        background-color: #9b0909;
+        
+      }
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-active:after,
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-open:after,
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-selected:after,
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item:hover:after,
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-active:after,
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-open:after,
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-selected:after,
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu:hover:after{
+        border-bottom: 2px solid white !important;
+      }
+      .ant-menu-item-selected{
+        background-color: #9b0909 !important;
+      }
+      .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item{
+        padding: 0 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+// 热门推荐
+.hotTitle {
+  height: 35px;
+  width: 100%;
+  border-bottom: 2px #C10D0C solid;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  .circle {
+    width: 34px;
+    height: 33px;
+    background: url('../../../../../../assets/sprite/index.png') no-repeat -225px -154px;
+  }
+
+  .title {
+    font-size: 20px;
+    color: #333333;
+    margin-right: 20px;
+  }
+
+  .route {
+    font-size: 12px;
+    color: #666666;
+    line-height: 33px;
+  }
+
+}
+
+// 热门图片&文字
+.hotUl {
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+
+  .hotLi {
+    width: 140px;
+    height: 204px;
+    margin-right: 42px;
+    margin-bottom: 30px;
+
+    .txt {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #000000;
+      line-height: 18px;
+      /* 允许单词内换行 */
+      word-break: break-all;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      /* 开启盒子的弹性布局 */
+      display: -webkit-box;
+      /* 控制第几行出现省略号 */
+      -webkit-line-clamp: 3;
+      /* 设置子元素从上向下垂直排列 */
+      -webkit-box-orient: vertical;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
+

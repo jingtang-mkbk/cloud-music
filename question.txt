@@ -1,0 +1,6 @@
+1. pages/discover/recommand/cpnt/list问题：
+   已经在redux 中 action中async await了，还需要在组件中async await才能使用
+
+   已解决 利用useDispatch，useSelector，shallowEqual  不适用connect高阶组件
+
+2. navbar discover栏刷新丢失active样式

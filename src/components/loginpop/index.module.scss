@@ -1,0 +1,81 @@
+:global {
+  .arco-modal-header {
+    background-color: #2d2d2d;
+    border-radius: 3px 3px 0 0;
+  }
+
+  .arco-modal-content {
+    height: 326px;
+  }
+
+  .arco-modal .arco-modal-close-icon {
+    color: white !important;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+
+  .pic {
+    width: 125px;
+    height: 220px;
+    background-color: white;
+  }
+
+  .qrcode {
+    margin-left: 25px;
+    width: 200px;
+    height: 220px;
+
+    .header {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .qrcodebox{
+      width: 146px;
+      height: 146px;
+      margin-left: 28px;
+      position: relative;
+
+      .qrcodeimg {
+        width: 100%;
+      }
+
+      .reacquire{
+        position: absolute;
+        width: 146px;
+        height: 146px;
+        top: 0;
+        left: 0;
+        background-color: white;
+        opacity: 0.8;
+
+        :global{
+          .anticon-redo{
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            font-size: 50px !important;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .txt1 {
+      color: rgba(0, 0, 0, 0.4);
+      margin-top: 14px;
+    }
+
+    .txt2 {
+      color: #0c73c2;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.slider {
+  width: 630px;
+  height: 50px;
+  display: flex;
+
+  img {
+    margin: 8px 15px 8px 0;
+    width: 34px;
+    height: 34px;
+  }
+
+  .txtslider {
+
+    .txt {
+      height: 28px;
+      line-height: 28px;
+      display: flex;
+
+      p {
+        color: white;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      p:first-child {
+        margin-right: 15px;
+      }
+
+      p:nth-child(n + 2) {
+        color: #9b9b9b;
+      }
+    }
+
+    .sliderrail {
+      display: flex;
+
+      :global {
+        .ant-slider-horizontal {
+          margin: 0 !important;
+        }
+      }
+
+      p {
+        margin: -5px 0 0 15px;
+
+        span:first-child {
+          color: #a1a1a1;
+        }
+
+        span:nth-child(2) {
+          color: #797979;
+        }
+      }
+    }
+  }
+}

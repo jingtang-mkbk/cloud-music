@@ -1,0 +1,18 @@
+// 左侧
+.left{
+  width: 730px;
+  border-right: 1px solid #ccc;
+
+  // 内容盒子
+  .content{
+    padding: 20px 20px 40px 20px;
+  }
+}
+
+// 右侧
+.right{
+  width: 250px;
+  overflow: hidden;
+}
+
+

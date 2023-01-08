@@ -1,0 +1,17 @@
+.lasticon {
+  :global {
+
+    .anticon-sound,
+    .anticon-sync,
+    .anticon-solution {
+      font-size: 22px !important;
+      color: #999;
+      margin: 14px 10px 14px 0;
+
+      &:hover {
+        color: #ccc;
+        cursor: pointer;
+      }
+    }
+  }
+}

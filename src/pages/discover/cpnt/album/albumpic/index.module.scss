@@ -1,0 +1,26 @@
+.albumbox{
+  width: 130px;
+  height: 180px;
+  position: relative;
+  margin: 0 61px 30px 0;
+
+  &:nth-child(5n){
+    margin-right: 0;
+  }
+
+  img{
+    width: 130px;
+    height: 130px;
+    display: block;
+  }
+
+  h4{
+    margin: 8px 0 3px 0;
+    font-size: 14px;
+    color: black;
+  }
+  p{
+    color: #666;
+    font-size: 12px;
+  }
+}
